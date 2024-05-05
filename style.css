@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+nav{
+    background: #ce100b;
+    height: 100px;
+    width: 100%;
+}
+label.logo img{
+    width: 200px;
+    position: absolute;
+    top: 15px;
+}
+.navbar .menu-list{
+    float: right;
+    margin-right: 20px;
+}
+.navbar .menu-list li{
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 30px;
+}
+.navbar .menu-list li a{
+    color: white;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-size: 20px;
+}
+a:hover{
+    background: #f2140d;
+    transition: .5s;
+}
+.yellow_stripe{
+    border-top: 20px solid #ffcc00;
+    width: 100%;
+}
+.home img{
+    width: 120vh;
+    height: 120vh;
+    object-fit: cover;
+}
+.home h1{
+    position: absolute;
+    left: 115vh;
+    top: 30vh;
+    font-size: 10vh;
+    line-height: 80px;
+    margin: 5px 100px;
+}
+.home p{
+    position: absolute;
+    left: 115vh;
+    top: 60vh;
+    text-align: justify;
+    line-height: 30px;
+    margin: 5px 100px;
+}
+.icon{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    float: right;
+    line-height: 100px;
+    margin: 0 50px;
+    display: none;
+}
+.icon .cancel-btn{
+    position: absolute;
+    right: 35vh;
+    display: none;
+}
+.about{
+    background-image: url(pictures/image/images/pcc_painting.jpg);
+    height: 750px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about h1{
+    text-align: center;
+    font-size: 10vh;
+    color: white;
+    padding: 2rem 0 1rem 0;
+    margin-bottom: 5rem;
+}
+.box{
+    width: 48%;
+    height: 200px;
+    background-color: black;
+    margin: -50px auto;
+    display: inline-block;
+}
+.white_line{
+    position: relative;
+    left: 60px;
+    bottom: 80px;
+    width: 203vh;
+    border-top: 5px solid white;
+}
+.container{
+    width: 80%;
+    margin: -100px auto;
+    display: flex;
+    justify-content: center;
+}
+.features{
+    text-align: center;
+    margin: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 60px 40px;
+    cursor: pointer;
+}
+.features img{
+    width: 150px;
+    margin: 0px 50px;
+}
+.features h2{
+    margin: 30px 0;
+}
+.features p{
+    line-height: 30px;
+}
+.contacts {
+    background: #ce100b;
+    height: 516px;
+    overflow: hidden;
+}
+.contacts img{
+    position: relative;
+    top: 3vh;
+    width: 500px;
+}
+.contacts p{
+    position: relative;
+    top: 3vh;
+    left: 15vh;
+    line-height: 70px;
+    color: white;
+    font-size: 20px;
+}
+.contacts h2{
+    position: relative;
+    top: 10vh;
+    left: 15vh;
+    line-height: 70px;
+    color: white;
+    font-size: 30px;
+}
+.contacts .voiceflow{
+    width: 300px;
+    position: absolute;
+    left: 50vh;
+    top: 325vh;
+}
+.contacts iframe{
+    position: relative;
+    left: 130vh;
+    bottom: 57vh;
+}
+p.one{
+    word-spacing: 100px;
+}
+p.two{
+    word-spacing: 10px;
+}
+p.three{
+    position: absolute;
+    top: 310vh;
+    left: 345px;
+    margin-right: 600px;
+    line-height: 30px;
+}
+@media (max-width: 952px){
+    nav{
+        width: 100%;
+    }
+    label.logo img{
+        width: 200px;
+        position: absolute;
+        top: 15px;
+    }
+    .home img{
+        width: 100%;
+        height: 300px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .home h1{
+        position: absolute;
+        left: 100px;
+        top: 75vh;
+        font-size: 10vh;
+        line-height: 80px;
+        margin: 5px 0px;
+    }
+    .home p{
+        position: absolute;
+        left: 10px;
+        top: 90vh;
+        text-align: justify;
+        line-height: 30px;
+        margin: 10px 100px;
+    }
+    .about{
+        position: relative;
+        bottom: -90vh;
+        height: 100%;
+    }
+    nav ul li a{
+        font-size: 15px;
+        margin: 0 -10px;
+        padding-right: 10px;
+    }
+}
+@media (max-width: 858px){
+    .icon{
+        display: block;
+    }
+    .navbar .menu-list{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f65b55;
+        top: 0;
+        left: -100%;
+        line-height: 10px;
+        text-align: center;
+        transition: all .5s ease;
+        z-index: 1000;
+    }
+    .navbar .menu-list.active{
+        left: 0%;
+    }
+    .white_line{
+        width: 85%;
+    }
+    .box{
+        width: 100%;
+        height: 200px;
+        margin: 20px auto;
+    }
+    .navbar .menu-list li{
+        display: block;
+        margin: 100px 0;
+        line-height: 30px;
+    }
+    .navbar .menu-list li a{
+        font-size: 30px;
+    }
+    a:hover{
+        background: none;
+        color: #ce100b;
+    }
+    .contacts{
+        position: relative;
+        bottom: -125vh;
+    }
+}
+@media (max-width: 500px){
+    nav{
+        width: 170%;
+    }
+    .yellow_stripe{
+        width: 170%;
+    }
+    .navbar .menu-list{
+        position: fixed;
+        width: 100%;
+        height: 200vh;
+        background: #f65b55;
+        top: 0;
+        left: -100%;
+        line-height: 10px;
+        text-align: center;
+        transition: all .5s ease;
+        z-index: 1000;
+    }
+    .navbar .menu-list.active{
+        left: 0%;
+    }
+    .home img{
+        width: 170%;
+    }
+    .home h1{
+        top: 450px;
+        left: 265px;
+        margin: 0px -200px;
+    }
+    .home p{
+        line-height: 40px;
+        font-size: 25px;
+        left: 215px;
+        margin: 70px -150px;
+    }
+    .about{
+        position: relative;
+        bottom: -170vh;
+        width: 170%;
+        height: 100%;
+    }
+    .features h2{
+        font-size: 40px;
+    }
+    .features p{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .contacts{
+        position: relative;
+        bottom: -189vh;
+        width: 170%;
+        height: 200vh;
+    }
+    .contacts h2{
+        left: 11vh;
+        top: 120px;
+    }
+    .contacts img{
+        left: 10vh;
+    }
+    p.one{
+        left: 50px;
+        word-spacing: 100px;
+    }
+    p.two{
+        left: 50px;
+        word-spacing: 10px;
+    }
+    p.three{
+        position: absolute;
+        top: 50vh;
+        left: 303px;
+        margin-right: 40px;
+        line-height: 30px;
+    }
+    .contacts .voiceflow{
+        width: 300px;
+        position: absolute;
+        left: 50vh;
+        top: 82vh;
+    }
+    .contacts iframe{
+        top: 35vh;
+        left: 50px;
+    }
+}

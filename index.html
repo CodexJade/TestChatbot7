@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>PACICO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/5a6c44833b.js" crossorigin="anonymous"></script>
+    <script src="scroll.js"></script>
+</head>
+<body>
+  <nav class="navbar"> 
+    <label class="logo"><img src="pictures/logo/logos/pacicowpcc.png"></label>
+    <ul class="menu-list">
+      <div class="icon cancel-btn">
+        <i class="fas fa-times"></i>
+      </div>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contacts">Contact Us</a></li>
+    </ul>
+    </div>
+    <div class="icon menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>  
+  </nav>
+  <hr class="yellow_stripe">
+  <section class="home" id="home">
+    <img src="pictures/image/images/pcc_school.jpg">
+    <h1>GREETINGS TO YOU!</h1>
+    <p>As we go onto this journey, we have created ourselves a chatbot, that would promote the school's inquiry system, by recording its information by text messages and AI generation. 
+      With the use of Voiceflow and other integrations to fully develop this into a customer service bot, it surely proves that people from Pasig Catholic College 
+      can keep up with others who use AI for their educational cause.<br><br>And as we expect the chat experience, you will also seek the identity of our very own chatbot, PACICO, 
+      that stands for Personal, Assistant, Companion, For Interaction, Counseling and Operation. This whole meaning of its name shows the capabilities it can have 
+      throughout the exclusive features shown in the chatbox.<br><br>
+      So what are you waiting for, try PACICO today!</p>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <h1>Features</h1>
+    <hr class="white_line">
+    <div class="container">
+      <div class="features">
+        <img src="pictures/image/images/AI Friend.png">
+        <h2>Interactive Mode</h2>
+        <p>Just like other AI applications, PACICO also bear his friendliness towards his users, 
+          by its Interactive Mode, where the user can personally talk with the AI
+          itself with no cheating involved.
+        </p>
+      </div>
+      <div class="features">
+        <img src="pictures/image/images/AI Support.png">
+        <h2>Interactive Mode</h2>
+        <p>Upon his description as an operator, he gives customer support towards 
+          the users upon their concerns and offers that they would solve or share upon the means of the institution.
+        </p>
+      </div>
+      <div class="features">
+        <img src="pictures/image/images/AI Info.png">
+        <h2>Adaptive Information</h2>
+        <p>Adaptation is key as everybody says, to where PACICO also adapts his identity as an informant 
+          to where he gives specific information of Pasig Catholic College, which he read upon the manual.
+        </p>
+      </div>
+    </div>
+</section>
+
+<footer class="contacts" id="contacts">
+  <img src="pictures/logo/logos/pacicowpcc.png">
+  <p class="one">Email : pacicohelp@zendesk.com</p>
+  <p class="two">School Address :</p>
+  <p class="three">Justice Ramon R. Jabson St. Brgy Malinao, Pasig City, Metro Manila</p>
+  <h2>Powered by</h2>
+  <img src="pictures/logo/logos/voiceflow logo.png" class="voiceflow">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.684410838482!2d121.07413917384093!3d14.56003107807121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c87f24b30353%3A0xe23c5dcee145d66f!2sPasig%20Catholic%20College%20(Main%20Campus)!5e0!3m2!1sen!2sph!4v1714838213104!5m2!1sen!2sph" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</footer>
+
+<script>
+  const menu = document.querySelector(".menu-list")
+  const menuBtn = document.querySelector(".menu-btn")
+  const cancelBtn = document.querySelector(".cancel-btn")
+  menuBtn.onclick = ()=>{
+    menu.classList.add("active")
+  }
+  cancelBtn.onclick = ()=>{
+    menu.classList.remove("active")
+  }
+  menu.onclick = ()=>{
+    menu.classList.remove("active")
+  }
+</script>
