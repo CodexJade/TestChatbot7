@@ -90,3 +90,24 @@
     menu.classList.remove("active")
   }
 </script>
+
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '65e5bcf05671df3be500ddfb' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+          assistant: {
+          title: "PACICO",
+          description: "PCC's very own assistant",
+          image: "pictures/logo/logos/PACICO_logo.png",
+          // color: "string",
+          stylesheet: "style.css" //link to your self-hosted stylesheet
+        }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
