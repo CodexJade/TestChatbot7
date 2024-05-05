@@ -259,7 +259,7 @@ p.three{
         color: #ce100b;
     }
 }
-@media (max-width: 500px){
+@media (max-width: 400px){
     nav{
         width: 170%;
     }
@@ -296,6 +296,8 @@ p.three{
         margin: 70px -150px;
     }
     .about{
+        position: relative;
+        bottom: -170vh;
         width: 170%;
         height: 100%;
     }
@@ -308,9 +310,9 @@ p.three{
     }
     .contacts{
         position: relative;
-        bottom: -189vh;
+        bottom: -179vh;
         width: 170%;
-        height: 200vh;
+        height: 165vh;
     }
     .contacts h2{
         left: 11vh;
@@ -329,7 +331,7 @@ p.three{
     }
     p.three{
         position: absolute;
-        top: 50vh;
+        top: 42vh;
         left: 303px;
         margin-right: 40px;
         line-height: 30px;
@@ -337,8 +339,8 @@ p.three{
     .contacts .voiceflow{
         width: 300px;
         position: absolute;
-        left: 50vh;
-        top: 82vh;
+        left: 40vh;
+        top: 65vh;
     }
     .contacts iframe{
         top: 35vh;
