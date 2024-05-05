@@ -331,7 +331,7 @@ p.three{
     }
     p.three{
         position: absolute;
-        top: 39vh;
+        top: 42vh;
         left: 303px;
         margin-right: 40px;
         line-height: 30px;
@@ -340,7 +340,7 @@ p.three{
         width: 300px;
         position: absolute;
         left: 40vh;
-        top: 60vh;
+        top: 65vh;
     }
     .contacts iframe{
         top: 35vh;
